@@ -1,6 +1,8 @@
 # conda-beagle
 
-For a Docker image containing conda and the BEAGLE phylogenetic likelihood library.
+[![Docker Hub Build Status](https://img.shields.io/docker/build/matsengrp/conda-beagle.svg)](https://hub.docker.com/repository/docker/matsengrp/conda-beagle)
+
+Dockerfile for a Docker image containing conda and the BEAGLE phylogenetic likelihood library.
 
 If you use BEAGLE, please cite:
 
