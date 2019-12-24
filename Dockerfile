@@ -12,8 +12,9 @@ RUN apt-get update -q && \
         openjdk-11-jdk \
         pkg-config
 
-RUN git clone --depth=1 https://github.com/beagle-dev/beagle-lib.git
+RUN git clone https://github.com/beagle-dev/beagle-lib.git
 WORKDIR beagle-lib
+RUN git checkout hmc-clock
 RUN ./autogen.sh
 RUN ./configure
 RUN make install
