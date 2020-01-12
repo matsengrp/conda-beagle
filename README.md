@@ -1,6 +1,8 @@
 # conda-beagle
 
-Dockerfile for a [Docker image](https://hub.docker.com/repository/docker/matsengrp/conda-beagle) containing conda and the BEAGLE phylogenetic likelihood library.
+[![Docker Repository on Quay](https://quay.io/repository/matsengrp/conda-beagle/status "Docker Repository on Quay")](https://quay.io/repository/matsengrp/conda-beagle)
+
+Dockerfile for a Docker image containing conda and the BEAGLE phylogenetic likelihood library.
 
 **Note that this is not meant to be a general-purpose image for BEAGLE.**
 It will always have the version suitable for the master branch of <https://github.com/phylovi/libsbn>, which may or may not be suitable for your work.
