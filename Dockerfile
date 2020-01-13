@@ -16,5 +16,5 @@ RUN git clone https://github.com/beagle-dev/beagle-lib.git
 WORKDIR beagle-lib
 RUN git checkout hmc-clock
 RUN ./autogen.sh
-RUN ./configure --disable-sse
+RUN ./configure
 RUN make install
