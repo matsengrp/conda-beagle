@@ -9,12 +9,11 @@ RUN apt-get update -q && \
         automake \
         build-essential \
         libtool \
-        openjdk-11-jdk \
         pkg-config
 
 RUN git clone https://github.com/beagle-dev/beagle-lib.git
 WORKDIR beagle-lib
 RUN git checkout hmc-clock
 RUN ./autogen.sh
-RUN ./configure
+RUN ./configure --without-jdk
 RUN make install
