@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3:2019.07
+FROM quay.io/matsen/anaconda3:2019.07
 
 # Some Debian package bug means we have to do this:
 RUN mkdir -p /usr/share/man/man1mkdir -p /usr/share/man/man1
