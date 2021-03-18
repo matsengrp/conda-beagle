@@ -1,4 +1,5 @@
-FROM quay.io/matsengrp/anaconda3:2019.07
+ARG BASE=quay.io/matsengrp/anaconda3:2020.11
+FROM $BASE
 
 # Some Debian package bug means we have to do this:
 RUN mkdir -p /usr/share/man/man1mkdir -p /usr/share/man/man1
