@@ -9,12 +9,15 @@ RUN apt-get update -q && \
         autoconf \
         automake \
         build-essential \
+        cmake \
         libtool \
         pkg-config
 
 RUN git clone https://github.com/beagle-dev/beagle-lib.git
 WORKDIR beagle-lib
 RUN git checkout hmc-clock
-RUN ./autogen.sh
-RUN ./configure --without-jdk
+RUN mkdir build
+WORKDIR build
+RUN cmake -DBUILD_CUDA=OFF -DBUILD_OPENCL=OFF -DBUILD_JNI=OFF ..
+RUN make
 RUN make install
