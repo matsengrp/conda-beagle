@@ -10,7 +10,8 @@ RUN apt-get update -q && \
         automake \
         build-essential \
         libtool \
-        pkg-config
+        pkg-config \
+        zlib1g-dev
 
 RUN git clone https://github.com/beagle-dev/beagle-lib.git
 WORKDIR beagle-lib
