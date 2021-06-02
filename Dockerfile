@@ -15,7 +15,7 @@ RUN apt-get update -q && \
 
 RUN git clone https://github.com/beagle-dev/beagle-lib.git
 WORKDIR beagle-lib
-RUN git checkout hmc-clock
+RUN git checkout 3dade2bf55f221a837019c2d80b309291c708704
 RUN ./autogen.sh
 RUN ./configure --without-jdk
 RUN make install
